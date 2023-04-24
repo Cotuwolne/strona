@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 
-<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Energia geotermalna w Polsce</title>
+    <title>Prognoza pogody</title>
     <link rel="stylesheet" href="StyleSheet1.css" type="text/css" />
 </head>
 <body>
@@ -35,10 +35,24 @@
         </div>
 
         <div id="content">
-            <h2>Czym jest energia geotermalna?</h2>
-            <img src="images/415743.jpg" width="600" height="400" style="text-align:center" />
-            <br />
-            Elektrownia geotermalna to rodzaj elektrowni wytwarzającej energię elektryczną z wykorzystaniem ciepła ziemi. Wykorzystuje się tutaj energię termiczną zgromadzoną wewnątrz Ziemi, która jest pobierana przez specjalne studnie geotermalne, a następnie wykorzystywana do ogrzania wody, która zamienia się w parę i przepływa przez turbinę, napędzając generator prądu elektrycznego.
+            <h2>Sprawdź najnowszą pogodę!</h2>
+            <div id="widget">
+                <div id="tp-widget-default" class="tp-widget-default-light" data-city="203221" data-version="2.0.0">
+                    <div id="tp-widget-bottom-default">
+                        <a id="tp-widget-flink-default" href="https://www.twojapogoda.pl/prognoza-godzinowa-polska/opolskie-opole/" target="_blank" rel="nofollow" title="Opole - prognoza godzinowa">Godzina po godzinie</a>
+                        <a id="tp-widget-flink-second" href="https://www.twojapogoda.pl/prognoza-16dni-polska/opolskie-opole/" target="_blank" rel="nofollow" title="Opole - prognoza na 16 dni">Na 16 dni</a>
+                        <a id="tp-widget-mlink-default" href="https://www.twojapogoda.pl" target="_blank" rel="nofollow" title="TwojaPogoda.pl - Pogoda w Polsce i na świecie - pogoda na 16 dni"></a>
+                    </div>
+                    <script type="text/javascript">
+                        (function (t, p, w, d, g) {
+                            if (t.getElementById(w)) return;
+                            d = t.getElementsByTagName(p)[0], g = t.createElement(p);
+                            g.id = w; g.src = "https://widget.twojapogoda.pl/default/main.js"; g.charset = "UTF-8";
+                            d.parentNode.appendChild(g);
+                        }(document, "script", "tp-widget-script-default"));
+                    </script>
+                </div>
+            </div>
             <br />
         </div>
         
@@ -46,7 +60,6 @@
             Bliżej energii z wnętrza Ziemii. &copy; Wszystkie prawa zastrzeżone
         </div>
     </div>
-
 
 
 </body>
